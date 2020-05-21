@@ -6,9 +6,17 @@
   box-shadow: 0px 11px 10px #cccccc;
   }
 
+  @media (max-width: 768px) {
+    .App {
+      width: 95vw;
+      height: 100vh;
+      margin-top: 0;
+    }
+  }
+
 header {
   padding: 1em;
-  height: 5em;
+  min-height: 5em;
   background: #516df7;
   text-align: center;
   color: #ffffff;
