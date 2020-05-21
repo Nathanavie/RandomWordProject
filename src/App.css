@@ -1,38 +1,53 @@
 .App {
+  width: 30em;
+  min-height: fit-content;
+  border: solid 0.05px #cccccc;
+  margin: 15vh auto 0;
+  box-shadow: 0px 11px 10px #cccccc;
+  }
+
+header {
+  padding: 1em;
+  height: 5em;
+  background: #516df7;
+  text-align: center;
+  color: #ffffff;
+  font-size: 9pt;
+}
+
+.content {
+  padding: 1em;
+}
+
+.BrokenWord h2 {
+  text-align: left;
+}
+
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.capitalize {
+  text-transform: capitalize;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: transparent;
+  border: 2px solid #516df7;
+  border-radius: 2px;
+  color: #516df7;
+  cursor: pointer;
+  display: block;
+  font: 700 14px/21px sans-serif;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #516df7;
+  color: #ffffff;
+  border: 2px solid #ffffff;
 }
