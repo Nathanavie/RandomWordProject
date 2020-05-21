@@ -50,7 +50,7 @@ fetchAPI = () => {
         <StartPage fetchAPI={this.fetchAPI} randomWord={randomWord} />
       )
     }
-    if (definition === undefined) {
+    if (definition === undefined || definition.length === 0) {
       return(
         <BrokenWord tryAgain={this.tryAgain} randomWord={randomWord} />
       )
